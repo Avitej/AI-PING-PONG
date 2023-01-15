@@ -24,13 +24,27 @@
       <br><br>
       <button class="btn btn-info" onclick="startgame()" id="start">PLAY GAME</button>
       <br><br>
-      <h3 id="status" class="btn btn-success"></h3>
+      <h3 id="status" class="btn btn-success">Status</h3>
       <br><br>
       <div id="canvas"></div>
       <br>
       <button class="btn btn-info" onclick="restart()" id="restart">RESTART GAME</button>
       <div id="game_console"></div>
-      <h4>By Avitej Akula</h4>
+      <h4 id="name">By Avitej Akula</h4>
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h3>Instructions</h3>
+            </div>
+            <div class="modal-body">
+              <ol>Move your wrist to move the paddle to the ball</ol>
+              <ol>The computer will move the other paddle</ol>
+            </div>
+          </div>
+        </div>
+      </div>
     </center>
 
         <script src="main.js"></script>
